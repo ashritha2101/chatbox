@@ -1,0 +1,41 @@
+<!--a website to chat with friends-->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>We Chat</title>
+  <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body style="background-image: linear-gradient(rgb(189,9,79), white); background-repeat: no-repeat;">
+  <div id="free-chat">
+    <div class="box">
+      <div><img id="appName" src="./assets/appName.png" /></div><br>
+      <img id="chat" src="./assets/chatting.gif" /><br>
+      <div><input id="user" type="text" placeholder="User" autocomplete="off";/></div>
+      <img id="enter" src="./assets/chat.png" />
+    </div>
+  </div>
+  <div id="chat-box" style="display:none">
+    <div id="flex-box">
+      <div id="heading">
+        <div><img id="emoji" src="./assets/emoji.gif" /></div>
+        <div id="name">Ash</div>
+        <div id="online">let's chat with!</div>
+      </div>
+      <div id="names"></div>
+      <div id="date"> </div>
+      <div id="feedback"></div>
+      <div id="chat-window">
+        <div id="output">
+        </div>
+      </div>
+      <div id="messageBox">
+        <input id="message" type="text" placeholder="Message" />
+        <div id="send">Send</div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="./socket.io/socket.io.js"></script>
+<script  src="./index.js"></script>
+</html>
